@@ -34,3 +34,92 @@ Make sure you have the following installed on your machine:
 ```bash
 git clone https://github.com/your-username/repo-name.git
 cd repo-name
+
+2. Setting up the Backend (Laravel)
+Navigate to the laravel-backend directory:
+
+bash
+Kodu kopyala
+cd laravel-backend
+Install PHP dependencies using Composer:
+
+bash
+Kodu kopyala
+composer install
+Create a .env file by copying .env.example:
+
+bash
+Kodu kopyala
+cp .env.example .env
+Generate the application key:
+
+bash
+Kodu kopyala
+php artisan key:generate
+Configure your database in the .env file and run migrations:
+
+bash
+Kodu kopyala
+php artisan migrate
+Start the Laravel development server:
+
+bash
+Kodu kopyala
+php artisan serve
+3. Setting up the Frontend (Next.js)
+Navigate to the nextjs-frontend directory:
+
+bash
+Kodu kopyala
+cd ../nextjs-frontend
+Install Node.js dependencies:
+
+bash
+Kodu kopyala
+npm install
+Create an .env.local file for the Next.js project by copying .env.example:
+
+bash
+Kodu kopyala
+cp .env.example .env.local
+Start the Next.js development server:
+
+bash
+Kodu kopyala
+npm run dev
+The Next.js frontend will be available at http://localhost:3000, and the Laravel backend will be running at http://localhost:8000.
+
+Additional Commands
+Laravel Commands
+Running Migrations:
+
+bash
+Kodu kopyala
+php artisan migrate
+Seeding the Database:
+
+bash
+Kodu kopyala
+php artisan db:seed
+Running Tests:
+
+bash
+Kodu kopyala
+php artisan test
+Next.js Commands
+Build the Project for Production:
+
+bash
+Kodu kopyala
+npm run build
+Run in Production Mode:
+
+bash
+Kodu kopyala
+npm run start
+Lint the Code:
+
+bash
+Kodu kopyala
+npm run lint
+
